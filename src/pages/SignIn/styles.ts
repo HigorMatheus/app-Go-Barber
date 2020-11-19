@@ -1,11 +1,12 @@
 import styled from 'styled-components/native';
+import { Platform } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
 
 export const Container = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  padding: 0 30px;
+  padding: 0 30px ${Platform.OS === 'android' ? 150 : 40}px;
 `;
 
 export const Title = styled.Text`
@@ -15,11 +16,11 @@ export const Title = styled.Text`
   margin: 64px 0 24px;
 `;
 
-export const ForgoutPassoord = styled.TouchableOpacity`
+export const ForgoutPassord = styled.TouchableOpacity`
   margin-top: 24px;
 `;
 
-export const ForgoutPassoordText = styled.Text`
+export const ForgoutPassordText = styled.Text`
   color: #f4ede8;
   font-size: 16px;
   font-family: 'RobotoSlab-Regular';
