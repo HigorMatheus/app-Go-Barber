@@ -1,6 +1,7 @@
 {
     "env": {
-        "es6": true
+        "es6": true,
+        "browser": true
     },
     "extends": [
 
@@ -38,6 +39,8 @@
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "import/prefer-default-export": "off",
       "no-unused-expressions": "off",
+      "timport/no-duplicate":"off",
+      "camelcase":"warn",
       "import/extensions": [
         "error",
         "ignorePackages",
